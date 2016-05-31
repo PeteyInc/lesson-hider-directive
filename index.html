@@ -5,8 +5,15 @@
     <title>lesson-hider-directive</title>
   </head>
   <body data-ng-controller="lessonCtrl">
-{{me}}
-<lesson-hider my-test="Hello there!"></lesson-hider>
+
+<ul>
+  <lesson-hider ng-repeat="lesson in lessons" lesson="lesson"></lesson-hider>
+</ul>
+
+
+<!-- <div>
+  Index: {{test}}
+</div> -->
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.js"></script>
 <script src="app.js"></script>
