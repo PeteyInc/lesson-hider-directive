@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html data-ng-app="directivePractice">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
     <title>lesson-hider-directive</title>
-  </head>
-  <body data-ng-controller="lessonCtrl">
+</head>
 
-<ul>
-  <lesson-hider ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson, day)"></lesson-hider>
-</ul>
+<body data-ng-controller="lessonCtrl">
 
+    <ul title="Lessons">
+      <h2>Lessons</h2>
+        <lesson-hider ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson, day)"></lesson-hider>
+    </ul>
 
-<!-- <div>
-  Index: {{test}}
-</div> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="lessonCtrl.js"></script>
+    <script src="lessonService.js"></script>
+    <script src="lessonHider.js"></script>
+</body>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.js"></script>
-<script src="app.js"></script>
-<script src="lessonCtrl.js"></script>
-<script src="lessonService.js"></script>
-<script src="lessonHider.js"></script>
-  </body>
 </html>

@@ -2,13 +2,14 @@ body {
   background-color: pink;
 }
 ul {
+  color: purple;
   list-style: none;
-  color: blue;
-  line-height: 2;
+  line-height: 1.5rem;
 }
 
 li {
   display: inline;
+  color: purple;
 }
 button {
   margin-left: 10px;

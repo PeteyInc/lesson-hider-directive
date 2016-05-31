@@ -17,6 +17,7 @@ angular.module('directivePractice').directive('lessonHider', function() {
                 scope.schedule.forEach(function(scheduleDay) {
                     if (scheduleDay.lesson === scope.lesson) {
                         scope.lessonDay = scheduleDay.weekday;
+                        element.css('color', 'red');
                         element.css('text-decoration', 'line-through');
                         return;
                     }
