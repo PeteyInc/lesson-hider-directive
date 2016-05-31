@@ -1,0 +1,19 @@
+body {
+  background-color: pink;
+}
+ul {
+  list-style: none;
+  color: blue;
+  line-height: 2;
+}
+
+li {
+  display: inline;
+}
+button {
+  margin-left: 10px;
+  background-color: white;
+  color: purple;
+  border: none;
+  border-radius: 20px;
+}

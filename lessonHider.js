@@ -14,8 +14,6 @@ angular.module('directivePractice').directive('lessonHider', function() {
             scope.getSchedule.then(function(response) {
                 scope.schedule = response.data;
 
-
-
                 scope.schedule.forEach(function(scheduleDay) {
                     if (scheduleDay.lesson === scope.lesson) {
                         scope.lessonDay = scheduleDay.weekday;
